@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle"
     tools:context=".MapsActivity">
 
     <androidx.fragment.app.FragmentContainerView
@@ -11,6 +12,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout="@layout/activity_maps" />
+
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="56dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:textSize="17sp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:focusable="true"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_rectangle"
+        android:text="@string/button"
+     />
 
 
 
