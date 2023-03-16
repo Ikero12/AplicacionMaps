@@ -90,9 +90,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMyLoca
 
         val circleOptions = CircleOptions()
             .center(LatLng(currentLocation.latitude, currentLocation.longitude))
-            .radius(100.0)
+            .radius(500.0)
             .strokeColor(Color.BLUE)
-            .fillColor(Color.argb(70, 0, 0, 255))
+            .fillColor(Color.argb(50, 0, 0, 255))
         mMap.addCircle(circleOptions)
 
 
@@ -194,7 +194,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMyLoca
         val distanceToMark4 = calcularDistancia(userLocation, markprueba.position)
 
         // Si la distancia es menor que 50 metros, muestra la marca en el mapa
-        val threshold = 100 // metros
+        val threshold = 50 // metros
         if (distanceToMark1 < threshold) {
             mark11?.isVisible = true
         }
